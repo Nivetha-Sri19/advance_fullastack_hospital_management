@@ -1,0 +1,142 @@
+2026-05-10 13:24:38,289 | INFO | main | Default admin created: admin / admin123
+2026-05-10 13:24:38,290 | INFO | main | Hospital Management System started ✅
+2026-05-10 13:37:27,407 | INFO | main | → GET /docs
+2026-05-10 13:37:27,428 | INFO | main | ← GET /docs [200]
+2026-05-10 13:37:27,791 | INFO | main | → GET /openapi.json
+2026-05-10 13:37:27,977 | INFO | main | ← GET /openapi.json [200]
+2026-05-10 13:38:32,513 | INFO | main | → POST /auth/register
+2026-05-10 13:38:33,215 | INFO | services.auth_service | User registered: Nivetha (role: UserRole.admin)
+2026-05-10 13:38:33,215 | INFO | main | ← POST /auth/register [201]
+2026-05-10 13:39:41,204 | INFO | main | → POST /auth/login
+2026-05-10 13:39:41,274 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/auth/login: Incorrect username or password
+2026-05-10 13:39:41,274 | INFO | main | ← POST /auth/login [401]
+2026-05-10 13:40:01,756 | INFO | main | → POST /auth/login
+2026-05-10 13:40:01,770 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/auth/login: Incorrect username or password
+2026-05-10 13:40:01,770 | INFO | main | ← POST /auth/login [401]
+2026-05-10 13:40:21,954 | INFO | main | → POST /auth/login
+2026-05-10 13:40:21,961 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/auth/login: Incorrect username or password
+2026-05-10 13:40:22,005 | INFO | main | ← POST /auth/login [401]
+2026-05-10 13:40:57,497 | INFO | main | → POST /auth/login
+2026-05-10 13:40:58,193 | INFO | services.auth_service | User logged in: Nivetha
+2026-05-10 13:40:58,203 | INFO | main | ← POST /auth/login [200]
+2026-05-10 13:45:18,232 | INFO | main | → POST /auth/forgot-password
+2026-05-10 13:45:18,272 | INFO | services.auth_service | Password reset token generated for: nivetha@gmail.com
+2026-05-10 13:45:18,273 | INFO | main | ← POST /auth/forgot-password [200]
+2026-05-10 13:47:38,090 | INFO | main | → POST /auth/reset-password
+2026-05-10 13:47:38,832 | INFO | services.auth_service | Password reset successful for user: Nivetha
+2026-05-10 13:47:38,832 | INFO | main | ← POST /auth/reset-password [200]
+2026-05-10 13:49:53,768 | INFO | main | → GET /auth/me
+2026-05-10 13:49:53,847 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/auth/me: Not authenticated
+2026-05-10 13:49:53,850 | INFO | main | ← GET /auth/me [401]
+2026-05-10 13:50:16,240 | INFO | main | → POST /auth/login
+2026-05-10 13:50:16,832 | INFO | services.auth_service | User logged in: Nivetha
+2026-05-10 13:50:16,838 | INFO | main | ← POST /auth/login [200]
+2026-05-10 13:50:50,192 | INFO | main | → GET /auth/me
+2026-05-10 13:50:50,200 | INFO | main | ← GET /auth/me [200]
+2026-05-10 13:53:26,265 | INFO | main | → POST /doctors
+2026-05-10 13:53:26,325 | INFO | services.doctor_service | Doctor created: Dilli
+2026-05-10 13:53:26,328 | INFO | main | ← POST /doctors [201]
+2026-05-10 13:55:14,294 | INFO | main | → GET /doctors
+2026-05-10 13:55:14,315 | INFO | main | ← GET /doctors [200]
+2026-05-10 14:29:47,546 | INFO | main | → GET /doctors/1
+2026-05-10 14:29:47,657 | INFO | main | ← GET /doctors/1 [200]
+2026-05-10 14:30:30,648 | INFO | main | → PUT /doctors/4
+2026-05-10 14:30:30,653 | ERROR | utils.exceptions | HTTP 404 at http://127.0.0.1:8000/doctors/4: Doctor not found
+2026-05-10 14:30:30,653 | INFO | main | ← PUT /doctors/4 [404]
+2026-05-10 14:30:47,257 | INFO | main | → PUT /doctors/1
+2026-05-10 14:30:47,285 | INFO | services.doctor_service | Doctor updated: ID 1
+2026-05-10 14:30:47,285 | INFO | main | ← PUT /doctors/1 [200]
+2026-05-10 14:31:10,263 | INFO | main | → DELETE /doctors/1
+2026-05-10 14:31:10,318 | INFO | services.doctor_service | Doctor deleted: ID 1
+2026-05-10 14:31:10,319 | INFO | main | ← DELETE /doctors/1 [200]
+2026-05-10 14:31:37,742 | INFO | main | → PATCH /doctors/1/toggle-status
+2026-05-10 14:31:37,756 | ERROR | utils.exceptions | HTTP 404 at http://127.0.0.1:8000/doctors/1/toggle-status: Doctor not found
+2026-05-10 14:31:37,758 | INFO | main | ← PATCH /doctors/1/toggle-status [404]
+2026-05-10 14:32:49,024 | INFO | main | → POST /doctors
+2026-05-10 14:32:49,071 | INFO | services.doctor_service | Doctor created: Vinith
+2026-05-10 14:32:49,071 | INFO | main | ← POST /doctors [201]
+2026-05-10 14:33:50,538 | INFO | main | → POST /doctors
+2026-05-10 14:33:50,612 | INFO | services.doctor_service | Doctor created: dilli
+2026-05-10 14:33:50,675 | INFO | main | ← POST /doctors [201]
+2026-05-10 14:38:09,910 | INFO | main | → POST /patients
+2026-05-10 14:38:09,970 | INFO | services.patient_service | Patient created: Desigan
+2026-05-10 14:38:09,973 | INFO | main | ← POST /patients [201]
+2026-05-10 14:39:40,981 | INFO | main | → POST /patients
+2026-05-10 14:39:41,033 | INFO | services.patient_service | Patient created: latha
+2026-05-10 14:39:41,035 | INFO | main | ← POST /patients [201]
+2026-05-10 14:39:59,664 | INFO | main | → GET /patients
+2026-05-10 14:39:59,693 | INFO | main | ← GET /patients [200]
+2026-05-10 14:40:55,148 | INFO | main | → GET /patients/1
+2026-05-10 14:40:55,166 | INFO | main | ← GET /patients/1 [200]
+2026-05-10 14:42:15,157 | INFO | main | → PUT /patients/1
+2026-05-10 14:42:15,197 | INFO | services.patient_service | Patient updated: ID 1
+2026-05-10 14:42:15,198 | INFO | main | ← PUT /patients/1 [200]
+2026-05-10 14:42:54,757 | INFO | main | → DELETE /patients/2
+2026-05-10 14:42:54,806 | INFO | services.patient_service | Patient deleted: ID 2
+2026-05-10 14:42:54,810 | INFO | main | ← DELETE /patients/2 [200]
+2026-05-10 14:43:33,132 | INFO | main | → GET /doctors
+2026-05-10 14:43:33,154 | INFO | main | ← GET /doctors [200]
+2026-05-10 14:44:21,290 | INFO | main | → POST /doctors
+2026-05-10 14:44:21,302 | ERROR | utils.exceptions | HTTP 400 at http://127.0.0.1:8000/doctors: Doctor with this email already exists
+2026-05-10 14:44:21,322 | INFO | main | ← POST /doctors [400]
+2026-05-10 14:44:38,251 | INFO | main | → GET /doctors
+2026-05-10 14:44:38,283 | INFO | main | ← GET /doctors [200]
+2026-05-10 14:45:09,398 | INFO | main | → GET /doctors
+2026-05-10 14:45:09,409 | INFO | main | ← GET /doctors [200]
+2026-05-10 14:45:56,006 | INFO | main | → POST /appointments
+2026-05-10 14:45:56,067 | INFO | services.appointment_service | Appointment created: ID 1
+2026-05-10 14:45:56,075 | INFO | main | ← POST /appointments [201]
+2026-05-10 14:47:16,817 | INFO | main | → POST /appointments
+2026-05-10 14:47:16,875 | INFO | services.appointment_service | Appointment created: ID 2
+2026-05-10 14:47:16,875 | INFO | main | ← POST /appointments [201]
+2026-05-10 14:48:16,689 | INFO | main | → GET /appointments
+2026-05-10 14:48:16,710 | INFO | main | ← GET /appointments [200]
+2026-05-10 14:49:42,506 | INFO | main | → GET /appointments/1
+2026-05-10 14:49:42,515 | INFO | main | ← GET /appointments/1 [200]
+2026-05-10 14:50:36,729 | INFO | main | → PUT /appointments/1
+2026-05-10 14:50:36,737 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/appointments/1: Could not validate credentials
+2026-05-10 14:50:36,740 | INFO | main | ← PUT /appointments/1 [401]
+2026-05-10 14:51:12,086 | INFO | main | → PUT /appointments/1
+2026-05-10 14:51:12,090 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/appointments/1: Could not validate credentials
+2026-05-10 14:51:12,092 | INFO | main | ← PUT /appointments/1 [401]
+2026-05-10 14:51:29,201 | INFO | main | → PUT /appointments/1
+2026-05-10 14:51:29,207 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/appointments/1: Could not validate credentials
+2026-05-10 14:51:29,261 | INFO | main | ← PUT /appointments/1 [401]
+2026-05-10 14:52:05,788 | INFO | main | → PUT /appointments/1
+2026-05-10 14:52:05,809 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/appointments/1: Could not validate credentials
+2026-05-10 14:52:05,846 | INFO | main | ← PUT /appointments/1 [401]
+2026-05-10 14:52:45,923 | INFO | main | → PATCH /appointments/1/cancel
+2026-05-10 14:52:45,928 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/appointments/1/cancel: Could not validate credentials
+2026-05-10 14:52:45,985 | INFO | main | ← PATCH /appointments/1/cancel [401]
+2026-05-10 14:55:25,796 | INFO | main | → POST /reports/1/upload
+2026-05-10 14:55:25,894 | ERROR | utils.exceptions | HTTP 401 at http://127.0.0.1:8000/reports/1/upload: Could not validate credentials
+2026-05-10 14:55:25,897 | INFO | main | ← POST /reports/1/upload [401]
+2026-05-10 14:57:41,496 | INFO | main | → POST /auth/login
+2026-05-10 14:57:42,062 | INFO | services.auth_service | User logged in: Nivetha
+2026-05-10 14:57:42,063 | INFO | main | ← POST /auth/login [200]
+2026-05-10 14:58:08,474 | INFO | main | → POST /auth/login
+2026-05-10 14:58:08,949 | INFO | services.auth_service | User logged in: Nivetha
+2026-05-10 14:58:08,949 | INFO | main | ← POST /auth/login [200]
+2026-05-10 14:58:35,092 | INFO | main | → POST /reports/1/upload
+2026-05-10 14:58:35,378 | INFO | routers.reports | Report uploaded for patient 1: desigan.txt
+2026-05-10 14:58:35,378 | INFO | main | ← POST /reports/1/upload [201]
+2026-05-10 14:58:56,298 | INFO | main | → PUT /appointments/1
+2026-05-10 14:58:56,333 | ERROR | utils.exceptions | Validation error at http://127.0.0.1:8000/appointments/1: [{'field': 'body -> status', 'message': "Input should be 'Pending', 'Approved', 'Rejected', 'Completed' or 'Cancelled'"}]
+2026-05-10 14:58:56,334 | INFO | main | ← PUT /appointments/1 [422]
+2026-05-10 14:59:22,083 | INFO | main | → PUT /appointments/1
+2026-05-10 14:59:22,298 | INFO | services.appointment_service | Appointment updated: ID 1
+2026-05-10 14:59:22,355 | INFO | main | ← PUT /appointments/1 [200]
+2026-05-10 14:59:43,349 | INFO | main | → PATCH /appointments/1/cancel
+2026-05-10 14:59:43,373 | INFO | services.appointment_service | Appointment cancelled: ID 1
+2026-05-10 14:59:43,379 | INFO | main | ← PATCH /appointments/1/cancel [200]
+2026-05-10 15:00:26,304 | INFO | main | → GET /reports/1
+2026-05-10 15:00:26,328 | INFO | main | ← GET /reports/1 [200]
+2026-05-10 15:01:27,617 | INFO | main | → GET /reports/download/1
+2026-05-10 15:01:27,657 | INFO | main | ← GET /reports/download/1 [200]
+2026-05-10 15:02:10,880 | INFO | main | → DELETE /reports/delete/1
+2026-05-10 15:02:10,906 | INFO | routers.reports | Report deleted: ID 1
+2026-05-10 15:02:10,907 | INFO | main | ← DELETE /reports/delete/1 [204]
+2026-05-10 15:02:42,016 | INFO | main | → GET /
+2026-05-10 15:02:42,019 | INFO | main | ← GET / [200]
+2026-05-10 15:03:02,824 | INFO | main | → GET /health
+2026-05-10 15:03:02,826 | INFO | main | ← GET /health [200]
